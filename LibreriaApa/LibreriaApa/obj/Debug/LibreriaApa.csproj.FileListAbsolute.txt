@@ -1,0 +1,7 @@
+C:\Users\Gary Ograjsek\Desktop\LibreriaApa\LibreriaApa\bin\Debug\LibreriaApa.exe.config
+C:\Users\Gary Ograjsek\Desktop\LibreriaApa\LibreriaApa\bin\Debug\LibreriaApa.exe
+C:\Users\Gary Ograjsek\Desktop\LibreriaApa\LibreriaApa\bin\Debug\LibreriaApa.pdb
+C:\Users\Gary Ograjsek\Desktop\LibreriaApa\LibreriaApa\obj\Debug\LibreriaApa.csprojAssemblyReference.cache
+C:\Users\Gary Ograjsek\Desktop\LibreriaApa\LibreriaApa\obj\Debug\LibreriaApa.csproj.CoreCompileInputs.cache
+C:\Users\Gary Ograjsek\Desktop\LibreriaApa\LibreriaApa\obj\Debug\LibreriaApa.exe
+C:\Users\Gary Ograjsek\Desktop\LibreriaApa\LibreriaApa\obj\Debug\LibreriaApa.pdb
