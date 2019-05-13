@@ -20,14 +20,7 @@ namespace Libreria {
         protected decimal PrezzoVendita { get => prezzoVendita; set => prezzoVendita = value; }
         protected int PezziPresenti { get => pezziPresenti; set => pezziPresenti = value; }
 
-        public Libro(/*string a, string t, int an, decimal pA, decimal pV, int p*/) {
-            /*this.Autore = a;
-            this.Titolo = t;
-            this.AnnoPubblicazione = an;
-            this.PrezzoAcquisto = pA;
-            this.PrezzoVendita = pV;
-            this.PezziPresenti = p;*/
-        }
+        public Libro() {}
 
         public virtual string Stampa() {
             return Autore + "|" + Titolo + "|" + AnnoPubblicazione + "|" + PrezzoAcquisto + "|" + PrezzoVendita + "|" + pezziPresenti + "|";
