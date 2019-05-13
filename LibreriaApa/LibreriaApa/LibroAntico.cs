@@ -16,12 +16,7 @@ namespace Libreria {
         public string Descrizione { get => descrizione; set => descrizione = value; }
         public int Codice { get => codice; set => codice = value; }
 
-        public LibroAntico(/*string a, string t, int an, decimal pA, decimal pV, int p, string nV, string nC, string d, int c) : base(a, t, an, pA, pV, p*/) {
-            /*this.NomeVenditore = nV;
-            this.NomeCompratore = nC;
-            this.Descrizione = d;
-            this.Codice = c;*/
-        }
+        public LibroAntico() {}
 
         public override string Stampa() {
             return base.Stampa() + NomeVenditore + "|" + NomeCompratore + "|" + Descrizione;
