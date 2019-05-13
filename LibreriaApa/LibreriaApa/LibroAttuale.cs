@@ -14,11 +14,7 @@ namespace Libreria {
         public string CasaEditrice { get => casaEditrice; set => casaEditrice = value; }
         public Int64 Isbn { get => isbn; set => isbn = value; }
 
-        public LibroAttuale(/*string a, string t, int an, decimal pA, decimal pV, int p, int n, string c, int i) : base(a, t, an, pA, pV, p*/) {
-            /*this.NumeroPagine = n;
-            this.CasaEditrice = c;
-            this.Isbn = i;*/
-        }
+        public LibroAttuale() {}
 
         public override string Stampa() {
             return base.Stampa() + NumeroPagine + "|" + CasaEditrice + "|" + Isbn;
