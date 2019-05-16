@@ -1,4 +1,5 @@
-﻿using System;
+using System;
+
 namespace LibreriaApa {
     class Program {
         static void Main(string[] args) {
