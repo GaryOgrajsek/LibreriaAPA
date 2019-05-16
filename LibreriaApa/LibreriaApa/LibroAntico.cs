@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Libreria {
     class LibroAntico : Libro {
@@ -12,11 +12,7 @@ namespace Libreria {
         public string Descrizione { get => descrizione; set => descrizione = value; }
         public int Codice { get => codice; set => codice = value; }
 
-        public LibroAntico() {}
-
-        public override string Stampa() {
-            return base.Stampa() + NomeVenditore + "|" + NomeCompratore + "|" + Descrizione;
-        }
+        public override string Stampa() => base.Stampa() + NomeVenditore + "|" + NomeCompratore + "|" + Descrizione;
 
         public override void Modifica() {
             base.Modifica();
@@ -25,21 +21,18 @@ namespace Libreria {
 
             Console.WriteLine("Nome venditore ");
             tmp = Console.ReadLine();
-            if (tmp != "\r") {
+            if (tmp != "\r")
                 NomeVenditore = tmp;
-            }
 
             Console.WriteLine("Nome compratore ");
             tmp = Console.ReadLine();
-            if (tmp != "\r") {
+            if (tmp != "\r")
                 NomeCompratore = tmp;
-            }
 
             Console.WriteLine("Descrizione ");
             tmp = Console.ReadLine();
-            if (tmp != "\r") {
+            if (tmp != "\r")
                 Descrizione = tmp;
-            }
         }
     }
 }
