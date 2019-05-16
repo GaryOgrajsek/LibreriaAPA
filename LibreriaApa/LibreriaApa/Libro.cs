@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Libreria {
     abstract class Libro {
@@ -16,50 +16,40 @@ namespace Libreria {
         protected decimal PrezzoVendita { get => prezzoVendita; set => prezzoVendita = value; }
         protected int PezziPresenti { get => pezziPresenti; set => pezziPresenti = value; }
 
-        public Libro() {}
-
-        public virtual string Stampa() {
-            return Autore + "|" + Titolo + "|" + AnnoPubblicazione + "|" + PrezzoAcquisto + "|" + PrezzoVendita + "|" + pezziPresenti + "|";
-        }
+        public virtual string Stampa() => Autore + "|" + Titolo + "|" + AnnoPubblicazione + "|" + PrezzoAcquisto + "|" + PrezzoVendita + "|" + pezziPresenti + "|";
 
         public virtual void Modifica() {
             string tmp = "";
 
             Console.WriteLine("Autore ");
             tmp = Console.ReadLine();
-            if (tmp != "\r") {
+            if (tmp != "\r")
                 Autore = tmp;
-            }
 
             Console.WriteLine("Titolo ");
             tmp = Console.ReadLine();
-            if (tmp != "\r") {
+            if (tmp != "\r")
                 Titolo = tmp;
-            }
 
             Console.WriteLine("Anno pubblicazione ");
             tmp = Console.ReadLine();
-            if (tmp != "\r") {
+            if (tmp != "\r")
                 AnnoPubblicazione = Convert.ToInt32(tmp);
-            }
 
             Console.WriteLine("Prezzo acquisto ");
             tmp = Console.ReadLine();
-            if (tmp != "\r") {
+            if (tmp != "\r")
                 PrezzoAcquisto = Convert.ToDecimal(tmp);
-            }
 
             Console.WriteLine("Prezzo vendita ");
             tmp = Console.ReadLine();
-            if (tmp != "\r") {
+            if (tmp != "\r")
                 PrezzoVendita = Convert.ToDecimal(tmp);
-            }
 
             Console.WriteLine("Pezzi presenti ");
             tmp = Console.ReadLine();
-            if (tmp != "\r") {
+            if (tmp != "\r")
                 PezziPresenti = Convert.ToInt32(tmp);
-            }
         }
     }
 }
