@@ -1,4 +1,5 @@
-﻿using System;
+using System;
+using System.Collections.Generic;
 
 namespace Libreria {
     class Libreria : List<Libro> {
@@ -24,21 +25,19 @@ namespace Libreria {
         public void illustraLibri() {
             int codice = 0;
             foreach (Libro l in this) {
-                Console.WriteLine(Convert.ToString(codice) + " " + l.Stampa() + "\n");
-                codice++;
+                Console.WriteLine(Convert.ToString(codice++) + " " + l.Stampa() + "\n");
             }
         }
 
         public void vendiLibro() {
-            if (Count == 0) {
+            if (Count == 0)
                 Console.WriteLine("Libri terminati");
-            } else {
+            else {
                 illustraLibri();
                 Console.WriteLine("Inserire il codice del libro desiderato");
                 try {
                     RemoveAt(Convert.ToInt32(Console.ReadLine()));
-                }
-                catch (Exception) {
+                } catch (Exception) {
                     Console.WriteLine("CODICE ERRATO!!!");
                 }
             }
