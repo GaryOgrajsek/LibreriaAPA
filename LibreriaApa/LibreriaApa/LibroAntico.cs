@@ -12,6 +12,8 @@ namespace Libreria {
         public string Descrizione { get => descrizione; set => descrizione = value; }
         public int Codice { get => codice; set => codice = value; }
 
+        public LibroAntico() => Modifica();
+        
         public override string Stampa() => base.Stampa() + NomeVenditore + "|" + NomeCompratore + "|" + Descrizione;
 
         public override void Modifica() {
