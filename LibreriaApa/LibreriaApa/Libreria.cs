@@ -7,14 +7,10 @@ namespace Libreria {
             Console.WriteLine("Antico (A) o Moderno(M)? ");
             switch (Console.ReadLine()) {
                 case "A":
-                    LibroAntico tmp = new LibroAntico();
-                    tmp.Modifica();
-                    Add(tmp);
+                    Add(new LibroAntico());
                     break;
                 case "M":
-                    LibroAttuale tmpa = new LibroAttuale();
-                    tmpa.Modifica();
-                    Add(tmpa);
+                    Add(new LibroAttuale());
                     break;
                 default:
                     Console.WriteLine("Guagliò, cosà staje facendò?");
