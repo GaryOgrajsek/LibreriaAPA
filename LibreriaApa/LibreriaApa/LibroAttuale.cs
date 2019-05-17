@@ -10,6 +10,8 @@ namespace Libreria {
         public string CasaEditrice { get => casaEditrice; set => casaEditrice = value; }
         public Int64 Isbn { get => isbn; set => isbn = value; }
 
+        public LibroAttuale() => Modifica();
+
         public override string Stampa() => base.Stampa() + NumeroPagine + "|" + CasaEditrice + "|" + Isbn;
 
         public override void Modifica() {
