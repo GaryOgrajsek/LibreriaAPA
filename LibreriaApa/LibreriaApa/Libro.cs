@@ -16,6 +16,8 @@ namespace Libreria {
         protected decimal PrezzoVendita { get => prezzoVendita; set => prezzoVendita = value; }
         protected int PezziPresenti { get => pezziPresenti; set => pezziPresenti = value; }
 
+        public Libro() => Modifica();
+
         public virtual string Stampa() => Autore + "|" + Titolo + "|" + AnnoPubblicazione + "|" + PrezzoAcquisto + "|" + PrezzoVendita + "|" + pezziPresenti + "|";
 
         public virtual void Modifica() {
